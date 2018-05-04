@@ -1,0 +1,494 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+
+}
+
+/* entire contents of nav bar style*/
+
+nav {
+	background: #f17d3a;
+	color: white;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+
+
+}
+
+/* general bold class for bolded text*/
+
+.bold {
+	font-weight: bold;
+}
+
+/*orange slice Logo image w/in nav bar*/
+
+div.nav-left img {
+	display: inline;
+	width: 29%;
+	float: left;
+	position: relative;
+    top: 28px;
+    right: 51px;
+}
+
+/*text next to logo  */
+
+a {
+	text-decoration: none;
+	display: inline;
+	color: white;
+}
+
+/*entire contents of left nav*/
+.nav-left {
+	display: inline-block;
+    margin: 17px 0 0 135px;
+    position: relative;
+    bottom: 16px;
+}
+
+
+/*entire contents of right nav bar*/
+
+
+ul {
+	display: inline-block;
+	float: right;
+    margin: 35px 30px 0 0;
+} 
+
+/*individual contents of right nav bar*/
+
+li {
+	padding: 0 10px 0 35px;
+	display: inline;
+}
+
+/* white area mid section with contents */
+
+section {
+    margin: 13px 30px;
+    position: relative;
+    background-color: red;
+}
+
+
+
+.container {
+    margin: 0 10px;
+    position: relative;
+}
+
+/*search icon in searchbar*/
+
+.fa-search {
+	float: right;
+	position: relative;
+    right: 37px;
+    top: 12px;
+    color: #bcbcbc;
+    font-size: 30px;
+}
+
+/*serachbar*/
+input {
+	float: right;
+	background: #f0f0f0;
+	color:#bcbcbc;
+	font-size: 30px;
+	padding: 8px;
+	text-transform: uppercase;
+	border: none;
+	box-shadow: 10px 10px #bcbcbc;
+}
+
+input::placeholder {
+	color:#cfcfcf;
+}
+
+input:focus {
+	outline: none;
+}
+
+/*right content of section w/ buttons*/
+.content-right {
+    position: relative;
+    top: 168px;
+    left: 366px;
+    float: right;
+}
+
+/*image of orange w/in section of content  */
+ .content-left {
+ 	float: left;
+ 	position: relative;
+    bottom: 110px;
+ }
+
+img {
+	width: 120%;
+}
+
+/*text w/in section of content right*/
+div > p {
+	font-size: 39px;
+	color: #f17f3b;
+}
+/*blue text w/in text of content right*/
+.blue-text {
+	color: #87d5cb;
+}
+
+ /*button on left side of content/*/
+ .left-button {
+ 	background: #7ccccb;
+  	-vendor-animation-duration: 3s;
+ }
+
+
+
+/*right button of content */
+ .right-button {
+ 	background: #f17d3a;
+ 	animation-duration: 1s;
+
+ }
+
+/* styling for both buttons*/
+button {
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px 46px;
+    margin: 0 26px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+/*both button focus*/
+button:focus {
+	outline: none;
+}
+
+
+/*foooter section with icons*/
+
+footer {
+	background: #7ccccb;
+	width: 100%;
+    height: 147px;
+    position: absolute;
+    top: 690px;
+}
+
+/*group of social media icons on the footer*/
+div.button-group {
+	text-align: center;
+    margin: 20px 0;
+}
+
+/*Footer section with social media icons*/
+.fa-facebook-f,
+.fa-instagram,
+.fa-twitter {
+	color: white;
+	padding: 20px;
+	font-size: 2em;
+}
+
+
+/* /////////////////////MEDIA QUERIES /////////// //////////////*/
+
+@media screen and (max-width: 1236px) {
+	img {
+		width: 100%;
+	}
+
+	.content-right {
+   		left: 355px;
+	}
+
+	div > p {
+		font-size: 34px;
+	}
+
+}
+
+@media screen and (max-width: 1140px) {
+	
+	nav {
+	    font-size: 19px;
+	}
+
+	/*image of orange*/
+
+	img {
+    	width: 93%;	
+	}	
+
+	.content-right {
+		position: relative;	
+   		top: 146px;
+    	left: 178px;    
+    }
+
+	div > p {
+		font-size: 29px;
+	}
+
+	button {
+		word-spacing: 0px;
+    	letter-spacing: 1px;
+    	padding: 16px 25px;
+	}
+
+	.fa-search {
+	    right: 37px;
+	    top: 7px;
+	    font-size: 23px;
+	}
+
+	input {
+		float: right;
+		font-size: 23px;
+   		padding: 5px;
+		box-shadow: 10px 10px #bcbcbc;
+	}
+
+}
+
+
+
+@media screen and (max-width: 1086px) {
+	nav {
+		font-size: 17px;
+	}
+
+	div > p {
+		font-size: 25px;
+	}
+
+	.content-right {
+		position: relative;	
+		top: 146px;
+		float: right;
+		left: 31%;	
+	}
+}
+
+@media screen and (max-width: 986px) {
+	li {
+		font-size: 15px;
+	}
+
+	img {
+		width: 69%;
+	}
+
+	.content-right {
+		top: 116px;
+	}
+}
+
+@media screen and (max-width: 942px) {
+	li {
+		padding: 0 10px 0 2px;
+	}
+
+	.content-right {
+    	left: 37%;	
+	}
+
+}
+
+@media screen and (max-width: 870px) {
+	div > p {
+		font-size: 22px;
+	}
+
+	button {
+		margin: 0 9px;
+		padding: 10px 10px;
+	}
+
+	.content-right {
+		top: 94px;		
+	}
+}
+
+@media screen and (max-width: 778px) {
+	li {
+		font-size: 12px;
+	}
+
+	img {
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 741px) {
+	img {
+		margin-top: 10%;
+	}
+
+	div > p {
+		font-size: 18px;
+	}
+
+	input {
+		font-size: 17px;
+	}
+
+	.fa-search {
+	    right: 37px;
+	    top: 7px;
+	    font-size: 17px;
+	}
+
+	.nav-left {
+    	margin: 0 0 0 10%;
+	}
+}
+
+@media screen and (max-width: 685px) {
+
+	img {
+		width: 35%;
+	}
+
+	button {
+		font-size: 10px;
+	}
+
+	li {
+		font-size: 9px;
+	}
+
+}
+
+@media screen and (max-width: 584px) {
+	.content-right {
+		left: 8%;
+	}
+
+	.fa-facebook-f,
+	.fa-instagram,
+	.fa-twitter {
+		color: white;
+		padding: 20px;
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 564px) {
+	div.nav-left img {
+    	width: 21%;
+	    top: 33px;
+	    right: 37px;
+	}
+
+	div.nav-left a p {
+    	margin: 52px 0 0 0;	
+    }
+
+	ul {
+		margin: 35px 0 0 0;
+	}
+}
+
+@media screen and (max-width: 538px) {
+	li:nth-child(5) {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 506px) {
+	li:nth-child(4) {
+		display: none;
+	}
+
+	div > p {
+		font-size: 14px; 
+	}
+
+	button  {
+		font-size: 8px;
+	}
+
+	.content-right {
+		top: 59px;
+		right: 20px;
+		left: 176px;	
+	}
+
+	input {
+		font-size: 12px;
+	}
+
+	.fa-search {
+		right: 21px;
+   		top: 2px;
+	}
+
+	footer {
+/*   		top: 300px;	
+*/   		height: 119px;
+   	}
+}
+
+@media screen and (max-width: 471px) {
+	
+	.content-right {
+		top: 46px;
+    	left: 38px;
+	}
+
+	div > p {
+		font-size: 13px; 
+	}	
+
+	img {
+		width: 29%;
+	}
+}
+
+@media screen and (max-width: 422px) {
+	
+
+	li:nth-child(4) {
+		display: block;
+	}
+
+	li:nth-child(5) {
+		display: block;
+	}
+
+	li {
+		display: block;
+		width: 100%;
+		text-align: right;
+		padding: 1px 0;
+	}
+
+	ul {
+		margin: 7px 6px 0 0;    
+	}
+}
+
+@media screen and (max-width: 377px) {
+	img {
+		text-align: center;
+	}
+
+}
+
